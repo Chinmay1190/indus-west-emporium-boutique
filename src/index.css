@@ -92,13 +92,13 @@
   }
 
   .shine-effect::before {
-    @apply absolute top-0 left-0 z-10 h-full w-0 animate-shine bg-gradient-to-r from-transparent via-white/20 to-transparent transform translate-x-full;
+    @apply absolute top-0 left-0 z-10 h-full w-0 bg-gradient-to-r from-transparent via-white/20 to-transparent transform translate-x-full;
     content: '';
   }
 
   .shine-effect:hover::before {
     @apply w-full;
-    transition: transform 0.8s ease;
+    animation: shine 0.8s ease-out;
     transform: translateX(-100%);
   }
 }
